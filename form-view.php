@@ -12,6 +12,9 @@
 <body>
 <div class="container">
     <h1>Order food in restaurant "the Personal Ham Processors"</h1>
+
+    <h5><?php echo $orderSent?></h5>
+
     <nav>
         <ul class="nav">
             <li class="nav-item">
@@ -26,8 +29,8 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email" class="form-control"/>
-                <?php echo $emailErr;?>
+                <input type="text" value="<?php if(isset($_POST["email"])) echo $_POST["email"];?>" id="email" name="email" class="form-control"/>
+                <span class="error"><?php echo $emailErr?></span>
             </div>
             <div></div>
         </div>
@@ -38,21 +41,29 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="street">Street:</label>
-                    <input type="text" name="street" id="street" class="form-control">
+                    <input type="text" value="<?php if(isset($_POST["street"])) echo $_POST["street"];?>" name="street" id="street" class="form-control">
+                    <span class="error"><?php echo $streetErr?></span>
+                    <!--added required-->
                 </div>
                 <div class="form-group col-md-6">
                     <label for="streetnumber">Street number:</label>
-                    <input type="text" id="streetnumber" name="streetnumber" class="form-control">
+                    <input type="text" value="<?php if(isset($_POST["streetnumber"])) echo $_POST["streetnumber"];?>" id="streetnumber" name="streetnumber" class="form-control">
+                    <span class="error"><?php echo $streetnumberErr?></span>
+                    <!--made input type number instead of text, added required-->
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="city">City:</label>
-                    <input type="text" id="city" name="city" class="form-control">
+                    <input type="text" value="<?php if(isset($_POST["city"])) echo $_POST["city"];?>" id="city" name="city" class="form-control">
+                    <span class="error"><?php echo $cityErr?></span>
+                    <!--added required-->
                 </div>
                 <div class="form-group col-md-6">
                     <label for="zipcode">Zipcode</label>
-                    <input type="text" id="zipcode" name="zipcode" class="form-control">
+                    <input type="text" value="<?php if(isset($_POST["zipcode"])) echo $_POST["zipcode"];?>" id="zipcode" name="zipcode" class="form-control">
+                    <span class="error"><?php echo $zipcodeErr?></span>
+                    <!--made input type number instead of text, added required-->
                 </div>
             </div>
         </fieldset>
