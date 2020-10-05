@@ -2,6 +2,10 @@
 //this line makes PHP behave in a more strict way
 declare(strict_types=1);
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 //we are going to use session variables so we need to enable sessions
 session_start();
 
@@ -34,4 +38,21 @@ $products = [
 
 $totalValue = 0;
 
+
+$emailErr = "";
+
+$email = test_input($_POST["email"]);
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $emailErr = "Invalid email format";
+}
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 require 'form-view.php';
+
+

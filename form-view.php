@@ -27,6 +27,7 @@
             <div class="form-group col-md-6">
                 <label for="email">E-mail:</label>
                 <input type="text" id="email" name="email" class="form-control"/>
+                <?php echo $emailErr;?>
             </div>
             <div></div>
         </div>
