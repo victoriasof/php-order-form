@@ -178,3 +178,32 @@ $delyTime = $now->format('H:i d-m-Y');
 require 'form-view.php';
 
 
+// Total revenue counter
+
+$orderValue = 0;
+if (isset($_POST['products'])){
+    foreach($_POST['products'] as $i => $product){
+        $orderValue += $product;
+    }
+}
+var_dump($orderValue);
+
+if (!empty($_POST['express_delivery'])){
+    $orderValue += $_POST['express_delivery'];
+}
+
+
+if (isset($_COOKIE['orders'])){
+
+    $totalValue = $_COOKIE['orders'];
+}
+else {
+
+    $totalValue = "0";
+    $cookie_name = 'orders';
+    $cookie_value = $totalValue;
+    setcookie($cookie_name, $cookie_value);
+
+}
+
+//$_SESSION["streetnumber"] = $streetnumber;
