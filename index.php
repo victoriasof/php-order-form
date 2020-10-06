@@ -148,8 +148,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 else {
     $orderSent="your order has been sent";
-}
 
+
+
+}
 
 
 function test_input($data) {
@@ -158,6 +160,20 @@ function test_input($data) {
     $data = htmlspecialchars($data);
     return $data;
 }
+
+
+//Calculate the delivery time
+
+$delyTime = 0;
+$now = new DateTime();
+
+if(isset($_POST['express_delivery'])){
+    $now->add(new DateInterval('PT45M'));
+}
+else{
+    $now->add(new DateInterval('PT2H'));
+}
+$delyTime = $now->format('H:i d-m-Y');
 
 require 'form-view.php';
 

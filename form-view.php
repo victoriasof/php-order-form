@@ -13,8 +13,6 @@
 <div class="container">
     <h1>Order food in restaurant "the Personal Ham Processors"</h1>
 
-    <h5><?php echo $orderSent?></h5>
-
     <nav>
         <ul class="nav">
             <li class="nav-item">
@@ -79,11 +77,16 @@
         </fieldset>
         
         <label>
-            <input type="checkbox" name="express_delivery" value="5" /> 
-            Express delivery (+ 5 EUR) 
+            <input type="checkbox" name="express_delivery" value="5" />
+            Express delivery (+ 5 EUR)
+
         </label>
             
         <button type="submit" class="btn btn-primary">Order!</button>
+
+        <h5><?php echo $orderSent?></h5>
+        <h5>Delivery time: <?php echo $delyTime ?></h5>
+
     </form>
 
     <footer>You already ordered <strong>&euro; <?php echo $totalValue ?></strong> in food and drinks.</footer>
