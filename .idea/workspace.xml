@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1176b1f-7ff1-40ae-8c1b-937ab04b8881" name="Default Changelist" comment="" />
+    <list default="true" id="a1176b1f-7ff1-40ae-8c1b-937ab04b8881" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +40,7 @@
       <server host="php-order-form.local" id="021acb08-f930-4911-8721-69117f9f5a17" name="php-order-form.local" />
     </servers>
   </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="php-order-form.local" />
   <component name="ProjectId" id="1iRuVxrMCfuhcwBQbQxfeOfRhTF" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -66,7 +70,7 @@
       <workItem from="1601882753371" duration="2545000" />
       <workItem from="1601885788908" duration="17822000" />
       <workItem from="1601967189420" duration="26233000" />
-      <workItem from="1602054048128" duration="9067000" />
+      <workItem from="1602054048128" duration="16125000" />
     </task>
     <servers />
   </component>
@@ -93,87 +97,81 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="298" y="52" width="824" height="684" key="#Servers/67.27.1299.741@67.27.1299.741" timestamp="1601968182293" />
+    <state x="405" y="216" width="554" height="403" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1602081528562">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="405" y="216" width="554" height="403" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/67.27.1299.741@67.27.1299.741" timestamp="1602081528562" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1601889902331">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1601889902331" />
-    <state width="517" height="294" key="GridCell.Tab.0.bottom" timestamp="1602063856555">
+    <state width="1087" height="217" key="GridCell.Tab.0.bottom" timestamp="1602081824723">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1602063856555" />
-    <state width="517" height="294" key="GridCell.Tab.0.center" timestamp="1602063856554">
+    <state width="1087" height="217" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1602081824723" />
+    <state width="1087" height="217" key="GridCell.Tab.0.center" timestamp="1602081824723">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1602063856554" />
-    <state width="517" height="294" key="GridCell.Tab.0.left" timestamp="1602063856554">
+    <state width="1087" height="217" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1602081824723" />
+    <state width="1087" height="217" key="GridCell.Tab.0.left" timestamp="1602081824722">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1602063856554" />
-    <state width="517" height="294" key="GridCell.Tab.0.right" timestamp="1602063856555">
+    <state width="1087" height="217" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1602081824722" />
+    <state width="1087" height="217" key="GridCell.Tab.0.right" timestamp="1602081824723">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1602063856555" />
-    <state width="517" height="294" key="GridCell.Tab.1.bottom" timestamp="1602063856558">
+    <state width="1087" height="217" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1602081824723" />
+    <state width="1087" height="217" key="GridCell.Tab.1.bottom" timestamp="1602081824724">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1602063856558" />
-    <state width="517" height="294" key="GridCell.Tab.1.center" timestamp="1602063856556">
+    <state width="1087" height="217" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1602081824724" />
+    <state width="1087" height="217" key="GridCell.Tab.1.center" timestamp="1602081824723">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1602063856556" />
-    <state width="517" height="294" key="GridCell.Tab.1.left" timestamp="1602063856555">
+    <state width="1087" height="217" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1602081824723" />
+    <state width="1087" height="217" key="GridCell.Tab.1.left" timestamp="1602081824723">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1602063856555" />
-    <state width="517" height="294" key="GridCell.Tab.1.right" timestamp="1602063856557">
+    <state width="1087" height="217" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1602081824723" />
+    <state width="1087" height="217" key="GridCell.Tab.1.right" timestamp="1602081824724">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1602063856557" />
-    <state width="517" height="294" key="GridCell.Tab.2.bottom" timestamp="1602063856560">
+    <state width="1087" height="217" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1602081824724" />
+    <state width="1087" height="217" key="GridCell.Tab.2.bottom" timestamp="1602081824724">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.2.bottom/67.27.1299.741@67.27.1299.741" timestamp="1602063856560" />
-    <state width="517" height="294" key="GridCell.Tab.2.center" timestamp="1602063856559">
+    <state width="1087" height="217" key="GridCell.Tab.2.bottom/67.27.1299.741@67.27.1299.741" timestamp="1602081824724" />
+    <state width="1087" height="217" key="GridCell.Tab.2.center" timestamp="1602081824724">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.2.center/67.27.1299.741@67.27.1299.741" timestamp="1602063856559" />
-    <state width="517" height="294" key="GridCell.Tab.2.left" timestamp="1602063856559">
+    <state width="1087" height="217" key="GridCell.Tab.2.center/67.27.1299.741@67.27.1299.741" timestamp="1602081824724" />
+    <state width="1087" height="217" key="GridCell.Tab.2.left" timestamp="1602081824724">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.2.left/67.27.1299.741@67.27.1299.741" timestamp="1602063856559" />
-    <state width="517" height="294" key="GridCell.Tab.2.right" timestamp="1602063856559">
+    <state width="1087" height="217" key="GridCell.Tab.2.left/67.27.1299.741@67.27.1299.741" timestamp="1602081824724" />
+    <state width="1087" height="217" key="GridCell.Tab.2.right" timestamp="1602081824724">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="517" height="294" key="GridCell.Tab.2.right/67.27.1299.741@67.27.1299.741" timestamp="1602063856559" />
-    <state x="176" y="27" key="SettingsEditor" timestamp="1601968045474">
+    <state width="1087" height="217" key="GridCell.Tab.2.right/67.27.1299.741@67.27.1299.741" timestamp="1602081824724" />
+    <state x="176" y="27" key="SettingsEditor" timestamp="1602081582257">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="176" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1601968045474" />
+    <state x="176" y="27" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1602081582257" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/index.php</url>
-          <line>203</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>205</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>206</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>207</line>
-          <option name="timeStamp" value="20" />
+          <line>236</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$product" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

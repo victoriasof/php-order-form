@@ -178,8 +178,6 @@ else{
 $delyTime = $now->format('H:i d-m-Y');
 
 
-
-
 // Total revenue counter
 
 $orderValue = 0;
@@ -205,7 +203,7 @@ else{
 
     $cookie_name='orders';
     $cookie_value=$orderValue;
-    setcookie($cookie_name, $cookie_value);
+    setcookie($cookie_name, strval($cookie_value)); //second parameter must be a string value
 
 }
 
@@ -219,6 +217,24 @@ else{
     //$cookie_value = $totalValue;
     //setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
 //}
+
+
+//send email
+
+$to = "victoria.sofianidou@gmail.com";
+$subject = "HTML email order";
+
+$message = "Thank you for your order. It will be delivered at" . $delyTime ;
+
+// Always set content-type when sending HTML email
+//$headers = "MIME-Version: 1.0" . "\r\n";
+//$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+//$headers .= 'From: webmaster@example.com' . "\r\n";
+//$headers .= 'Cc: myboss@example.com' . "\r\n";
+
+mail($to, $subject, $message);
 
 
 require 'form-view.php';
