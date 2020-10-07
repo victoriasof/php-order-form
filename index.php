@@ -43,12 +43,14 @@ $products = $food;
     //$products = $drinks;
 //}
 
+if (isset($_GET['food'])){
 
-if($_GET['food']==1){
-    $products = $food;
-}
-else if($_GET['food']==0){
-    $products = $drinks;
+    if($_GET['food']==1){
+        $products = $food;
+    }
+    else if($_GET['food']==0){
+        $products = $drinks;
+    }
 }
 
 
@@ -175,7 +177,7 @@ else{
 }
 $delyTime = $now->format('H:i d-m-Y');
 
-require 'form-view.php';
+
 
 
 // Total revenue counter
@@ -192,18 +194,31 @@ if (!empty($_POST['express_delivery'])){
     $orderValue += $_POST['express_delivery'];
 }
 
+//cookies
+
+$totalValue = $orderValue; //assign order value to total value
 
 if (isset($_COOKIE['orders'])){
-
     $totalValue = $_COOKIE['orders'];
 }
-else {
+else{
 
-    $totalValue = "0";
-    $cookie_name = 'orders';
-    $cookie_value = $totalValue;
+    $cookie_name='orders';
+    $cookie_value=$orderValue;
     setcookie($cookie_name, $cookie_value);
 
 }
 
-//$_SESSION["streetnumber"] = $streetnumber;
+
+//if (isset($_COOKIE['orders'])){
+    //$totalValue = $_COOKIE['orders'];
+//}
+//else {
+    //$totalValue = "0";
+    //$cookie_name = 'orders';
+    //$cookie_value = $totalValue;
+    //setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+//}
+
+
+require 'form-view.php';
