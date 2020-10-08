@@ -221,10 +221,10 @@ else{
 
 //send email
 
-$to = "victoria.sofianidou@gmail.com";
-$subject = "HTML email order";
+//$to = "victoria.sofianidou@gmail.com";
+//$subject = "HTML email order";
 
-$message = "Thank you for your order. It will be delivered at" . $delyTime ;
+//$message = "Thank you for your order. It will be delivered at" . $delyTime ;
 
 // Always set content-type when sending HTML email
 //$headers = "MIME-Version: 1.0" . "\r\n";
@@ -234,7 +234,20 @@ $message = "Thank you for your order. It will be delivered at" . $delyTime ;
 //$headers .= 'From: webmaster@example.com' . "\r\n";
 //$headers .= 'Cc: myboss@example.com' . "\r\n";
 
-mail($to, $subject, $message);
+//mail($to, $subject, $message);
+
+
+$fullForm = !empty($_SESSION['email'])&!empty($_SESSION['street'])&!empty($_SESSION['streetnumber'])&!empty($_SESSION['city'])&!empty($_SESSION['zipcode'])&isset($_POST['products']);
+
+if($fullForm){
+    $sendTo = $_SESSION['email'];
+
+    $msg = "Thank you for your order. It will be delivered around" . $delyTime;
+
+    $send = mail($sendTo, "Order confirmed", $msg);
+
+}
+
 
 
 require 'form-view.php';
