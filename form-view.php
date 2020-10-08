@@ -13,6 +13,8 @@
 <div class="container">
     <h1>Order food in restaurant "the Personal Ham Processors"</h1>
 
+    <h5 class="text-danger" ><?php echo $msg?></h5>
+
     <nav>
         <ul class="nav">
             <li class="nav-item">
@@ -84,11 +86,9 @@
             
         <button type="submit" class="btn btn-primary">Order!</button>
 
-        <h5 class="text-danger" ><?php echo $msg?></h5>
-
     </form>
 
-    <footer>You already ordered <strong>&euro; <?php echo $orderValue ?></strong> in food and drinks.</footer>
+    <footer>You already ordered <strong>&euro; <?php echo $totalValue ?></strong> in food and drinks.</footer>
 </div>
 
 <style>

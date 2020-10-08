@@ -22,6 +22,7 @@ function whatIsHappening() {
 
 whatIsHappening();
 
+
 //your products with their price.
 $food = [
     ['name' => 'Club Ham', 'price' => 3.20],
@@ -173,8 +174,6 @@ $delyTime = $now->format('H:i d-m-Y');
 
 // Total revenue counter
 
-$totalValue = 0;
-
 $orderValue = 0;
 if (isset($_POST['products'])){
     foreach($_POST['products'] as $i => $product){
@@ -193,14 +192,12 @@ $totalValue = $orderValue; //assign order value to total value
 
 if (isset($_COOKIE['orders'])){
     $totalValue = $_COOKIE['orders'];
+    $totalValue += $orderValue;
 }
-else{
 
-    $cookie_name='orders';
-    $cookie_value=$orderValue;
-    setcookie($cookie_name, strval($cookie_value)); //second parameter must be a string value
-
-}
+$cookie_name='orders';
+$cookie_value=$totalValue;
+setcookie($cookie_name, strval($cookie_value), time() + (86400 * 30), "/"); //second parameter must be a string value
 
 
 //if (isset($_COOKIE['orders'])){
