@@ -54,8 +54,6 @@ if (isset($_GET['food'])){
 }
 
 
-$totalValue = 0;
-
 //Make sure that the street, streetnumber, city and zipcode is a required field.
 
 
@@ -143,17 +141,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["zipcode"] = $zipcode;
     }
 
-
 }
 
 
-
-else {
-    $orderSent="your order has been sent";
-
-
-
-}
+//else {
+    //$orderSent="your order has been sent";
+//}
 
 
 function test_input($data) {
@@ -179,6 +172,8 @@ $delyTime = $now->format('H:i d-m-Y');
 
 
 // Total revenue counter
+
+$totalValue = 0;
 
 $orderValue = 0;
 if (isset($_POST['products'])){
@@ -237,17 +232,18 @@ else{
 //mail($to, $subject, $message);
 
 
+$msg ="";
+
 $fullForm = !empty($_SESSION['email'])&!empty($_SESSION['street'])&!empty($_SESSION['streetnumber'])&!empty($_SESSION['city'])&!empty($_SESSION['zipcode'])&isset($_POST['products']);
 
 if($fullForm){
     $sendTo = $_SESSION['email'];
 
-    $msg = "Thank you for your order. It will be delivered around" . $delyTime;
+    $msg = "Thank you for your order. It will be delivered around " . $delyTime;
 
-    $send = mail($sendTo, "Order confirmed", $msg);
+    //$send = mail($sendTo, "Order confirmed", $msg);
 
 }
-
 
 
 require 'form-view.php';

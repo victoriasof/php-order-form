@@ -28,7 +28,7 @@
             <div class="form-group col-md-6">
                 <label for="email">E-mail:</label>
                 <input type="text" value="<?php echo $email ;?>" id="email" name="email" class="form-control"/>
-                <span class="error"><?php echo $emailErr?></span>
+                <span class="error text-danger"><?php echo $emailErr?></span>
             </div>
             <div></div>
         </div>
@@ -40,13 +40,13 @@
                 <div class="form-group col-md-6">
                     <label for="street">Street:</label>
                     <input type="text" value="<?php echo $street;?>" name="street" id="street" class="form-control">
-                    <span class="error"><?php echo $streetErr?></span>
+                    <span class="error text-danger"><?php echo $streetErr?></span>
                     <!--added required-->
                 </div>
                 <div class="form-group col-md-6">
                     <label for="streetnumber">Street number:</label>
                     <input type="text" value="<?php echo $streetnumber;?>" id="streetnumber" name="streetnumber" class="form-control">
-                    <span class="error"><?php echo $streetnumberErr?></span>
+                    <span class="error text-danger"><?php echo $streetnumberErr?></span>
                     <!--made input type number instead of text, added required-->
                 </div>
             </div>
@@ -54,13 +54,13 @@
                 <div class="form-group col-md-6">
                     <label for="city">City:</label>
                     <input type="text" value="<?php echo $city;?>" id="city" name="city" class="form-control">
-                    <span class="error"><?php echo $cityErr?></span>
+                    <span class="error text-danger"><?php echo $cityErr?></span>
                     <!--added required-->
                 </div>
                 <div class="form-group col-md-6">
                     <label for="zipcode">Zipcode</label>
                     <input type="text" value="<?php echo $zipcode;?>" id="zipcode" name="zipcode" class="form-control">
-                    <span class="error"><?php echo $zipcodeErr?></span>
+                    <span class="error text-danger"><?php echo $zipcodeErr?></span>
                     <!--made input type number instead of text, added required-->
                 </div>
             </div>
@@ -84,8 +84,7 @@
             
         <button type="submit" class="btn btn-primary">Order!</button>
 
-        <h5><?php echo $orderSent?></h5>
-        <h5>Delivery time: <?php echo $delyTime ?></h5>
+        <h5 class="text-danger" ><?php echo $msg?></h5>
 
     </form>
 
