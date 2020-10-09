@@ -30,6 +30,7 @@ $streetnumberErr = "";
 $cityErr = "";
 $zipcodeErr = "";
 
+$orderSent = false;
 $email = "";
 $street = "";
 $streetnumber = "";
@@ -95,6 +96,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         $_SESSION["zipcode"] = $zipcode;
     }
+
+    if(empty($emailErr) && empty($streetErr) && empty($streetnumberErr) && empty($cityErr) && empty($zipcodeErr )){
+        $orderSent = true;
+
+
+    }
+
 
 }
 
